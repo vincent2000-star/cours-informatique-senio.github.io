@@ -4,10 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apprendre l'Informatique - Seniors</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        nav { margin-bottom: 20px; }
-        nav a { margin: 10px; text-decoration: none; font-size: 18px; }
-        section { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background: #f9f9f9; }
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; background: #eef; }
+        nav { margin-bottom: 20px; background: #007BFF; padding: 10px; border-radius: 5px; }
+        nav a { margin: 10px; text-decoration: none; font-size: 20px; color: white; font-weight: bold; }
+        section { max-width: 700px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background: #fff; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
+        button { padding: 10px 20px; font-size: 18px; background: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #0056b3; }
     </style>
 </head>
 <body>
@@ -27,6 +30,7 @@
     <section id="cours">
         <h2>Cours</h2>
         <p>Découvrez des cours adaptés à votre rythme : utiliser un ordinateur, envoyer un email, naviguer sur Internet...</p>
+        <button onclick="alert('Accédez aux cours détaillés bientôt !')">Voir les cours</button>
     </section>
     
     <section id="faq">
@@ -36,7 +40,13 @@
     
     <section id="contact">
         <h2>Contact</h2>
-        <p>Besoin d'aide ? Contactez-nous via notre formulaire.</p>
+        <p>Besoin d'aide ? Envoyez-nous un message :</p>
+        <form>
+            <input type="text" placeholder="Votre nom" required><br><br>
+            <input type="email" placeholder="Votre email" required><br><br>
+            <textarea placeholder="Votre message" rows="4" required></textarea><br><br>
+            <button type="submit">Envoyer</button>
+        </form>
     </section>
 </body>
 </html>
